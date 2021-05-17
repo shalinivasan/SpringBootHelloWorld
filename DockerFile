@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
 VOLUME /tmp
-ADD C:\Users\Prabhu\Desktop\Example_programs\spring-boot-hello-world\target\spring-boot-hello-world-0.0.1-SNAPSHOT.jar app.jar
+ADD target\spring-boot-hello-world-0.0.1-SNAPSHOT.jar app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
